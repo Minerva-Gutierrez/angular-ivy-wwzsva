@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-contador',
-  templateUrl: './contador.component.html',
-  styleUrls: ['./contador.component.css']
+  selector: "app-contador",
+  templateUrl: "./contador.component.html",
+  styleUrls: ["./contador.component.css"]
 })
 export class ContadorComponent implements OnInit {
- count: number = 0;
-  constructor() { }
+  count: number = 0;
 
-  ngOnInit() {  }
+  constructor() {}
+
+  ngOnInit() {}
+
   aumentar(): void {
     this.count++;
   }
-disminuir(): void{
-  this.count--;
-}
+
+  disminuir(): void {
+    this.count--;
+  }
 }
